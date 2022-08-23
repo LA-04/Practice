@@ -1,0 +1,79 @@
+{
+  "id": 1,
+  "jsonrpc": "2.0",
+  "params": {
+    "card": {
+      "addin": [
+        {
+          "params": [
+            {
+              "count": 0,
+              "units": "string",
+              "value": "string"
+            }
+          ],
+          "type": "string"
+        }
+      ],
+      "countryProduction": "string",
+      "createdAt": "2022-06-22T17:35:26.996Z",
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "imtId": 0,
+      "imtSupplierId": 0,
+      "nomenclatures": [
+        {
+          "addin": [
+            {
+              "params": [
+                {
+                  "count": 0,
+                  "units": "string",
+                  "value": "string"
+                }
+              ],
+              "type": "string"
+            }
+          ],
+          "concatVendorCode": "string",
+          "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+          "isArchive": true,
+          "nmId": 0,
+          "variations": [
+            {
+              "addin": [
+                {
+                  "params": [
+                    {
+                      "count": 0,
+                      "units": "string",
+                      "value": "string"
+                    }
+                  ],
+                  "type": "string"
+                }
+              ],
+              "barcode": "string",
+              "barcodes": [
+                "string"
+              ],
+              "chrtId": 0,
+              "errors": [
+                "string"
+              ],
+              "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+            }
+          ],
+          "vendorCode": "string"
+        }
+      ],
+      "object": "string",
+      "parent": "string",
+      "supplierId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "supplierVendorCode": "string",
+      "updatedAt": "2022-06-22T17:35:26.996Z",
+      "uploadID": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+      "userId": 0
+    },
+    "supplierID": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+  }
+}
