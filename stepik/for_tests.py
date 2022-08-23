@@ -1,5 +1,5 @@
-def square(x):
-    return x*x
-
-a = float(input())
-print(square(a))
+def is_triangle(a, b, c):
+    if a + b > c and a + c > b and c + b > a:
+        return True
+    else:
+        return False
