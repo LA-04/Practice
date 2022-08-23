@@ -1,5 +1,5 @@
-def max_min_summ(x):
-    print(f'Min = {min(x)}, max = {max(x)}, sum = {sum(x)}')
+def perimetr(width, heigth):
+    print(f'Периметр прямоугольника, равен {2*(width+heigth)}')
 
-
-max_min_summ(list(map(int, input().split())))
+width, heigth = map(int, input().split())
+perimetr(width, heigth)
