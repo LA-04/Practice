@@ -1,5 +1,8 @@
-def perimetr(width, heigth):
-    print(f'Периметр прямоугольника, равен {2*(width+heigth)}')
+def email(x):
+    if 'a' <= x.lower() <= 'z' or '0' <= x <= '9' or x  in '_@.':
+        print("ДА")
+    else:
+        print("НЕТ")
 
-width, heigth = map(int, input().split())
-perimetr(width, heigth)
+
+email(input())
