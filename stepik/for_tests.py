@@ -1,8 +1,9 @@
 def even_number(a):
-    return a if a % 2 == 0 else False
+    return a if a % 2 != 0 else False
 
-a = int(input())
-while a != 1:
+k = list(map(int, input().split()))
+lst = []
+for a in k:
     if even_number(a):
-        print(a)
-    a = int(input())
+        lst.append(a)
+print(*lst)
