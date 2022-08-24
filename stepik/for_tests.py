@@ -1,9 +1,7 @@
-def even_number(a):
-    return a if a % 2 != 0 else False
-
-k = list(map(int, input().split()))
-lst = []
-for a in k:
-    if even_number(a):
-        lst.append(a)
-print(*lst)
+tp = input()
+if tp == 'RECT':
+    def get_sq(a,b):
+        return a*b
+else:
+    def get_sq(a):
+        return a*a
