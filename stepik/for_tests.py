@@ -1,9 +1,8 @@
-def how_long(words):
-    short_words = []
-    for word in words:
-        if len(word) >= 6:
-            short_words.append(word)
-    return short_words
+def sity(sitys):
+    d = {town: len(town) for town in sitys}
+    return d
 
-
-print(*how_long(input().split()))
+sitys = list(map(str, input().split()))
+d = sity(sitys)
+a = sorted(d, key=lambda x: d[x])
+print(*a)
