@@ -1,8 +1,6 @@
-def sity(sitys):
-    d = {town: len(town) for town in sitys}
-    return d
+def min_max(min, max):
+    return min*max
 
-sitys = list(map(str, input().split()))
-d = sity(sitys)
-a = sorted(d, key=lambda x: d[x])
-print(*a)
+
+numbers = list(map(int, input().split()))
+print(min_max(min(numbers), max(numbers)))
