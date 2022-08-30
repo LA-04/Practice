@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1e55b54-e0f4-4f2f-a2a7-85078315860b" name="Changes" comment="" />
+    <list default="true" id="c1e55b54-e0f4-4f2f-a2a7-85078315860b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../cbr_bot/auth_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbr_bot/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cbr_bot/main_cbr_tg_bot.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
