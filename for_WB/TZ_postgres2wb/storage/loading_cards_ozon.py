@@ -38,6 +38,40 @@ try:
             print("Список продуктов к загрузке сформирован...")
             print("#" * 20)
 
+            # 2.2
+            # Заходим в таблицу wb_base_card для поиска пути джесона
+            select_all_rows = "SELECT * FROM wb_base_card;"
+            cursor.execute(select_all_rows)
+            rows = cursor.fetchall()
+
+            for row in rows:
+                product_type = row.get("product_type")
+                path_insert_json = row.get("path_insert_json")
+
+                for product_for_upload in list_for_upload_ozon:
+                    if product_type in product_for_upload:
+
+                        with open('templates\\testtempl.json', encoding='utf-8') as keys:
+                            set_keys = json.load(keys)
+
+                        with open(f'insert_fields\\insert_{product_type}.json', encoding='utf-8') as discription:
+                            set_discription = json.loads(discription.read()).get("addin")
+
+                        for num, value in enumerate(set_discription):
+                            params = value.get("params")
+                            repl = params[0]["value"]
+
+                            for key, value_key in reversed(set_keys.items()):
+                                if key in repl:
+                                    repl = repl.replace(f'{key}', value_key)
+
+                            value["params"][0].update({"value": repl})
+
+                        with open(f'product_with_keys\\{product_type}_with_keys.json', 'w', encoding='utf8') as dis_WB:
+                            json.dump(set_discription, dis_WB, ensure_ascii=False)
+            print("Files uploaded!")
+            print("#" * 20)
+
             #отправка запроса на получение карточки из озона
 
             url_1 = "https://api-seller.ozon.ru/v3/products/info/attributes"
