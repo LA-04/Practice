@@ -280,14 +280,14 @@ title = {
 }
 
 def rec(sl, search):
-    if search in sl.values():
+    if search in sl.keys():
         return sl[search]
 
     for n in sl.values():
         if type(n) == dict:
-            ret = rec(n, search)
-            if ret != None:
-                return ret
+          ret = rec(n, search)
+          if ret !=None:
+            return ret
 
 
-print(rec(title, input('Enter \n').upper()))
+print(rec(title, input('Enter \n')))

@@ -21,15 +21,14 @@ b1 = KeyboardButton('EUR')
 b2 = KeyboardButton('USD')
 b3 = KeyboardButton('JPY')
 b4 = KeyboardButton('CNY')
-b5 = KeyboardButton('GBP')
-b6 = KeyboardButton('SEK')
+
 b7 = InlineKeyboardButton(text='Курс на сегодня', callback_data='archiv')
 b8 = InlineKeyboardButton(text='Архивный курс', callback_data='archiv')
 
 kb_client = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
 kb_start = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
 
-kb_client.add(b1).insert(b2).add(b3).insert(b4).add(b5).insert(b6)
+kb_client.add(b1).insert(b2).add(b3).insert(b4)
 kb_start.add(b7).insert(b8)
 
 class FSMAdmin(StatesGroup):
@@ -43,11 +42,12 @@ async def on_sturtup(_):
 @dp.message_handler(commands='start', state=None)
 async def start(message: types.Message):
 
-    await message.answer("Выберете действие:", reply_markup= kb_start)
+    await message.answer("Вы можете узнать актуальный курс ЦБ на сегодня \nлибо обратиться к архиву курсов валют\n\nВыберете действие:", reply_markup= kb_start)
 
 @dp.message_handler(Text(equals=['Курс на сегодня'], ignore_case=True), state=None)
 async def today(message: types.Message):
     try:
+        top_valutes = ['EUR', 'USD', 'JPY', 'CNY']
         d = datetime.datetime.now()
         day = datetime.date.strftime(d, "%d/%m/%Y")
         req = requests.get(f"https://cbr.ru/scripts/XML_daily.asp?date_req={day}")
@@ -56,22 +56,22 @@ async def today(message: types.Message):
         response = json.dumps(xmltodict.parse(xlm), indent=2, ensure_ascii=False)
         rec_json = json.loads(response)
         valutes = rec_json["ValCurs"]["Valute"]
-        valutes_on_today = {info['Name']:info['Value'] for info in valutes}
-        await message.answer(f"Дата: {day}\n")
-        #{valutes_on_today}", reply_markup=kb_start
+        valutes_on_today = {info['Name']:info['Value'] for info in valutes if info['CharCode'] in top_valutes}
+        tmpstring = f"Курс ЦБ на {day}\n\n"
         for key, item in valutes_on_today.items():
-            await message.answer(f"{key}: {item}", reply_markup=kb_start)
+            tmpstring = tmpstring + "```\n{0:<20} {1}".format(key, item) + "\n```"
+        await message.answer(tmpstring, parse_mode="Markdown", reply_markup=kb_start)
     except:
         await message.answer("Ошибка, попробуйте еще раз", reply_markup=kb_start)
 
-    await message.answer("---Все валюты выгружены---", reply_markup= kb_start)
+    #await message.answer("---Все валюты выгружены---", reply_markup= kb_start)
 
 #выбора валюты
 @dp.message_handler(Text(equals=['Архивный курс'], ignore_case=True), state=None)
 async def archiv(message: types.Message):
 
     await FSMAdmin.valute.set()
-    await message.answer("Выберете называние валюты:", reply_markup= kb_client)
+    await message.answer("Выберете валюту:", reply_markup= kb_client)
 
 #Получаем и сохраняем валюту
 @dp.message_handler(state=FSMAdmin.valute)
@@ -81,7 +81,7 @@ async def valute_selection(message: types.Message, state: FSMContext):
         data['valute'] = message.text
 
     await FSMAdmin.next()
-    await message.answer("А теперь дату:", reply_markup=await DialogCalendar().start_calendar())
+    await message.answer("Дату:", reply_markup=await DialogCalendar().start_calendar())
 
 #Получаем и сохраняем желаемую дату
 @dp.callback_query_handler(dialog_cal_callback.filter(), state=FSMAdmin.day)
@@ -89,7 +89,7 @@ async def day_selection(callback_query: CallbackQuery, callback_data: dict, stat
     selected, date = await DialogCalendar().process_selection(callback_query, callback_data)
     if selected:
         await callback_query.message.answer(
-            f'You selected {date.strftime("%d/%m/%Y")}'
+            f'{date.strftime("%d/%m/%Y")}'
         )
 
     async with state.proxy() as data:
