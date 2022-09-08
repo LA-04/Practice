@@ -1,0 +1,314 @@
+{
+  "result": [
+    {
+      "id": 320474072,
+      "barcode": "",
+      "category_id": 17037009,
+      "name": "Блокнот в точку с лягушкой / Тетрадь 48 листов с лягушечкой в точку",
+      "offer_id": "base_notepad_point-0",
+      "height": 6,
+      "depth": 205,
+      "width": 150,
+      "dimension_unit": "mm",
+      "weight": 100,
+      "weight_unit": "g",
+      "images": [
+        {
+          "file_name": "https://cdn1.ozone.ru/s3/multimedia-8/6367610552.jpg",
+          "default": true,
+          "index": 0
+        }
+      ],
+      "image_group_id": "",
+      "images360": [],
+      "pdf_list": [],
+      "attributes": [
+        {
+          "attribute_id": 8229,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 94091,
+              "value": "Блокнот"
+            }
+          ]
+        },
+        {
+          "attribute_id": 6532,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 0,
+              "value": "50"
+            }
+          ]
+        },
+        {
+          "attribute_id": 5254,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 56849,
+              "value": "В точку"
+            }
+          ]
+        },
+        {
+          "attribute_id": 5257,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 970885687,
+              "value": "Ламинированная бумага"
+            }
+          ]
+        },
+        {
+          "attribute_id": 5260,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 12201,
+              "value": "Кольца"
+            }
+          ]
+        },
+        {
+          "attribute_id": 6531,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 0,
+              "value": "80"
+            }
+          ]
+        },
+        {
+          "attribute_id": 9997,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 970663854,
+              "value": "креативный; животные"
+            }
+          ]
+        },
+        {
+          "attribute_id": 5261,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 12770,
+              "value": "Без полей"
+            }
+          ]
+        },
+        {
+          "attribute_id": 4384,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 0,
+              "value": "блокнот в точку - 1 шт.; упаковка - 1 шт.\n"
+            }
+          ]
+        },
+        {
+          "attribute_id": 9024,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 0,
+              "value": "base_notepad_point-0"
+            }
+          ]
+        },
+        {
+          "attribute_id": 85,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 971224781,
+              "value": "YOUNI"
+            }
+          ]
+        },
+        {
+          "attribute_id": 10097,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 0,
+              "value": "color0"
+            }
+          ]
+        },
+        {
+          "attribute_id": 10098,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 0,
+              "value": "https://cdn1.ozone.ru/s3/multimedia-t/6292261025.jpg"
+            }
+          ]
+        },
+        {
+          "attribute_id": 5258,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 12066,
+              "value": "Без ограничения"
+            }
+          ]
+        },
+        {
+          "attribute_id": 9790,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 0,
+              "value": "false"
+            }
+          ]
+        },
+        {
+          "attribute_id": 9461,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 349826490,
+              "value": "Блокнот"
+            }
+          ]
+        },
+        {
+          "attribute_id": 4382,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 0,
+              "value": "15 x 20 см"
+            }
+          ]
+        },
+        {
+          "attribute_id": 10100,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 0,
+              "value": "false"
+            }
+          ]
+        },
+        {
+          "attribute_id": 22074,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 0,
+              "value": "false"
+            }
+          ]
+        },
+        {
+          "attribute_id": 9048,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 0,
+              "value": "base_notepad_square"
+            }
+          ]
+        },
+        {
+          "attribute_id": 4180,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 0,
+              "value": "Блокнот в точку с оленями / Тетрадь 48 листов с оленятами в точку"
+            }
+          ]
+        },
+        {
+          "attribute_id": 9390,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 43241,
+              "value": "Взрослая"
+            }
+          ]
+        },
+        {
+          "attribute_id": 11794,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 970860783,
+              "value": "safe"
+            }
+          ]
+        },
+        {
+          "attribute_id": 13216,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 971006037,
+              "value": "Унисекс"
+            }
+          ]
+        },
+        {
+          "attribute_id": 4191,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 0,
+              "value": "Творческая тетрадь с оленем (блокнот) от компании YOUni (Your Own Universe) - оригинальный канцтовар для школы, в университет, на работу; подарок для мальчика, подарок для девочки, для друга или подруги. Арт блокнот с олененком можно использовать как тетрадь для школы, блокнот для рисования, блокнот для заметок, блокнот для записей. Творческий блокнот для рисования идеален для подарка на Новый год, День рождения, 14 февраля, 23 февраля или 8 марта тем, кто любит оленей. Обложка арт блокнота на пружине не твердая, но плотная. Листы рабочей тетради на пружине белые, в точку. Плотность бумаги блокнота в точку - 80 гр/м2, как у бумаги для принтера. В ассортименте также имеются скетчбуки с плотными листами, тетради в клетку, тетради в линейку, тетради 48 и другие канцтовары для школы. Создайте свою вселенную с продукцией от YOUni! Будем рады вашим отзывам!"
+            }
+          ]
+        },
+        {
+          "attribute_id": 10015,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 0,
+              "value": "false"
+            }
+          ]
+        },
+        {
+          "attribute_id": 4389,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 90295,
+              "value": "Россия"
+            }
+          ]
+        },
+        {
+          "attribute_id": 21807,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 971229788,
+              "value": "A5 (14.8 × 21 см)"
+            }
+          ]
+        }
+      ],
+      "complex_attributes": [],
+      "color_image": "https://cdn1.ozone.ru/s3/multimedia-8/6367610552.jpg",
+      "last_id": ""
+    }
+  ],
+  "total": 1,
+  "last_id": ""
+}

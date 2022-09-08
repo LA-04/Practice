@@ -3,22 +3,24 @@
     {
       "attributes": [
         {
-          "attribute_id": 9048,
-          "complex_id": 0,
-          "values": [
-            {
-              "dictionary_value_id": 0,
-              "value": "base_notepad_sketch"
-            }
-          ]
-        },
-        {
           "attribute_id": 8229,
           "complex_id": 0,
           "values": [
             {
-              "dictionary_value_id": 96168,
-              "value": "Скетчбук красивый"
+              "dictionary_value_id": 92499,
+              "value": "Кружка"
+            },
+            {
+              "dictionary_value_id": 970801925,
+              "value": "Пиала для чая"
+            },
+            {
+              "dictionary_value_id": 92540,
+              "value": "Чашка для чая"
+            },
+            {
+              "dictionary_value_id": 92539,
+              "value": "Чашка кофейная"
             }
           ]
         },
@@ -33,42 +35,158 @@
           ]
         },
         {
-          "attribute_id": 4191,
+          "attribute_id": 9048,
           "complex_id": 0,
           "values": [
             {
               "dictionary_value_id": 0,
-              "value": "Творческая тетрадь С ЛЯГУШОНКОМ ( скетчбук, блокнот скечбук ) от компании YOUni - оригинальный канцтовар для школы, в университет, на работу; подарок для мальчика, подарок для девочки, для друга или подруги. Арт блокнот С ЛЯГУШКАМИ можно использовать как блокнот для записей, блокнот для рисования, блокнот для заметок, блокнот для скетчинга. Творческий блокнот для рисования идеален для подарка на Новый год, День рождения, 14 февраля, 23 февраля или 8 марта тем, кто любит ЛЯГУШЕК. Обложка арт блокнота на пружине не твердая, но плотная, с глянцевой ламинацией. Листы рабочей тетради на пружине белые, без линовки (нелинованные). Плотность бумаги блокнота без линовки - 160 гр/м2. В ассортименте также имеются тетради в линейку, тетради в клетку, тетради в точку, тетради 48 и другие канцтовары для школы. Погрузитесь в особую атмосферу с продукцией от YOUni! Создайте свою вселенную!"
+              "value": "base_cup_white"
             }
           ]
         },
         {
-          "attribute_id": 5258,
+          "attribute_id": 10096,
           "complex_id": 0,
           "values": [
             {
-              "dictionary_value_id": 12066,
-              "value": "Без ограничения"
+              "dictionary_value_id": 61571,
+              "value": "белый"
             }
           ]
         },
         {
-          "attribute_id": 13216,
-          "complex_id": 0,
-          "values": [
-            {
-              "dictionary_value_id": 971006037,
-              "value": "Унисекс"
-            }
-          ]
-        },
-        {
-          "attribute_id": 4382,
+          "attribute_id": 10098,
           "complex_id": 0,
           "values": [
             {
               "dictionary_value_id": 0,
-              "value": "15 x 20 см"
+              "value": "https://cdn1.ozone.ru/s3/multimedia-q/6367613234.jpg"
+            }
+          ]
+        },
+        {
+          "attribute_id": 9024,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 0,
+              "value": "base_cup_white-1"
+            }
+          ]
+        },
+        {
+          "attribute_id": 6392,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 0,
+              "value": "300"
+            }
+          ]
+        },
+        {
+          "attribute_id": 6949,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 0,
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "attribute_id": 6383,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 61873,
+              "value": "Керамика"
+            }
+          ]
+        },
+        {
+          "attribute_id": 4383,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 0,
+              "value": "150"
+            }
+          ]
+        },
+        {
+          "attribute_id": 9390,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 43241,
+              "value": "Взрослая"
+            },
+            {
+              "dictionary_value_id": 43242,
+              "value": "Детская"
+            }
+          ]
+        },
+        {
+          "attribute_id": 8448,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 23346,
+              "value": "День рождения"
+            },
+            {
+              "dictionary_value_id": 23348,
+              "value": "Новый год"
+            },
+            {
+              "dictionary_value_id": 970696087,
+              "value": "Универсальный"
+            },
+            {
+              "dictionary_value_id": 23351,
+              "value": "Новоселье"
+            }
+          ]
+        },
+        {
+          "attribute_id": 8449,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 25706,
+              "value": "Друзья"
+            },
+            {
+              "dictionary_value_id": 25708,
+              "value": "Коллега"
+            },
+            {
+              "dictionary_value_id": 25711,
+              "value": "Любимая"
+            },
+            {
+              "dictionary_value_id": 25712,
+              "value": "Любимый"
+            },
+            {
+              "dictionary_value_id": 25715,
+              "value": "Мама"
+            },
+            {
+              "dictionary_value_id": 970892965,
+              "value": "Брат"
+            }
+          ]
+        },
+        {
+          "attribute_id": 10097,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 0,
+              "value": "color1"
             }
           ]
         },
@@ -79,134 +197,40 @@
             {
               "dictionary_value_id": 90295,
               "value": "Россия"
-            }
-          ]
-        },
-        {
-          "attribute_id": 21807,
-          "complex_id": 0,
-          "values": [
-            {
-              "dictionary_value_id": 971229788,
-              "value": "A5 (14.8 × 21 см)"
-            }
-          ]
-        },
-        {
-          "attribute_id": 9390,
-          "complex_id": 0,
-          "values": [
-            {
-              "dictionary_value_id": 43241,
-              "value": ""
             },
             {
-              "dictionary_value_id": 43242,
-              "value": ""
+              "dictionary_value_id": 90296,
+              "value": "Китай"
             }
           ]
         },
         {
-          "attribute_id": 6532,
+          "attribute_id": 10015,
           "complex_id": 0,
           "values": [
             {
               "dictionary_value_id": 0,
-              "value": "56"
+              "value": "false"
             }
           ]
         },
         {
-          "attribute_id": 5254,
-          "complex_id": 0,
-          "values": [
-            {
-              "dictionary_value_id": 56844,
-              "value": "Разметка линеечная"
-            }
-          ]
-        },
-        {
-          "attribute_id": 5257,
-          "complex_id": 0,
-          "values": [
-            {
-              "dictionary_value_id": 970885687,
-              "value": "Стальная бумага"
-            }
-          ]
-        },
-        {
-          "attribute_id": 5260,
-          "complex_id": 0,
-          "values": [
-            {
-              "dictionary_value_id": 12201,
-              "value": "Кольца красные"
-            }
-          ]
-        },
-        {
-          "attribute_id": 6531,
+          "attribute_id": 22074,
           "complex_id": 0,
           "values": [
             {
               "dictionary_value_id": 0,
-              "value": "12232"
+              "value": "false"
             }
           ]
         },
         {
-          "attribute_id": 9997,
-          "complex_id": 0,
-          "values": [
-            {
-              "dictionary_value_id": 970663854,
-              "value": "Веселый"
-            },
-            {
-              "dictionary_value_id": 970663847,
-              "value": "Расстения"
-            }
-          ]
-        },
-        {
-          "attribute_id": 5261,
-          "complex_id": 0,
-          "values": [
-            {
-              "dictionary_value_id": 12770,
-              "value": "В линейку с полями"
-            }
-          ]
-        },
-        {
-          "attribute_id": 4384,
+          "attribute_id": 4191,
           "complex_id": 0,
           "values": [
             {
               "dictionary_value_id": 0,
-              "value": "блокнот без разметки - 1 шт.; упаковка - 1 шт.\n"
-            }
-          ]
-        },
-        {
-          "attribute_id": 10097,
-          "complex_id": 0,
-          "values": [
-            {
-              "dictionary_value_id": 0,
-              "value": "color0"
-            }
-          ]
-        },
-        {
-          "attribute_id": 10098,
-          "complex_id": 0,
-          "values": [
-            {
-              "dictionary_value_id": 0,
-              "value": "https://cdn1.ozone.ru/s3/multimedia-t/6292261025.jpg"
+              "value": "Творческая тетрадь с оленем (блокнот) от компании YOUni (Your Own Universe) - оригинальный канцтовар для школы, в университет, на работу; подарок для мальчика, подарок для девочки, для друга или подруги. Арт блокнот с олененком можно использовать как блокнот для скетчинга карандашами (маркеры, акварель будут просвечивать), блокнот для рисования, блокнот для заметок, блокнот для записей. Творческий блокнот для рисования идеален для подарка на Новый год, День рождения, 14 февраля, 23 февраля или 8 марта тем, кто любит оленей. Обложка арт блокнота на пружине не твердая, но плотная. Листы рабочей тетради на пружине белые, без линовки (нелинованные). Плотность бумаги блокнота в клетку - 80 гр/м2, как у бумаги для принтера. В ассортименте также имеются скетчбуки с плотными листами, блокноты в точку, тетради в линейку, в клетку, тетради 48 и другие канцтовары для школы. Создайте свою вселенную с продукцией от YOUni!"
             }
           ]
         },
@@ -216,17 +240,47 @@
           "values": [
             {
               "dictionary_value_id": 0,
-              "value": "YOUni / Скетчбук с лягушкой для рисования / Блокнот с лягушечкой для скетчинга"
+              "value": "Блокнот с оленями без линовки / Тетрадь 48 листов с оленятами без разлиновки"
             }
           ]
         },
         {
-          "attribute_id": 9024,
+          "attribute_id": 11794,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 970860783,
+              "value": "safe"
+            }
+          ]
+        },
+        {
+          "attribute_id": 4392,
           "complex_id": 0,
           "values": [
             {
               "dictionary_value_id": 0,
-              "value": "base_notepad_sketch-0"
+              "value": "base_cup_white"
+            }
+          ]
+        },
+        {
+          "attribute_id": 20900,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 0,
+              "value": "true"
+            }
+          ]
+        },
+        {
+          "attribute_id": 21156,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 0,
+              "value": "true"
             }
           ]
         },
@@ -235,8 +289,38 @@
           "complex_id": 0,
           "values": [
             {
-              "dictionary_value_id": 349827741,
-              "value": "Скетчбук"
+              "dictionary_value_id": 349826748,
+              "value": "Кружка, чашка, пиала для чая"
+            }
+          ]
+        },
+        {
+          "attribute_id": 10100,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 0,
+              "value": "false"
+            }
+          ]
+        },
+        {
+          "attribute_id": 4384,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 0,
+              "value": "керамическая кружка с принтом для чая и кофе - 1 шт.; упаковка -1 шт."
+            }
+          ]
+        },
+        {
+          "attribute_id": 9790,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 0,
+              "value": "false"
             }
           ]
         }

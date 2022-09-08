@@ -1,6 +1,6 @@
 import json
 import os
-from PIL import Image
+
 import pymysql
 from config import host, user, password, db_name
 import requests
@@ -25,6 +25,27 @@ def upload_list(cursor):
     return list_for_upload_ozon
 
 
+def change_keys(i):
+    name = i
+
+    with open(f"templates\\insert_{name[9:-2]}.json", encoding="utf-8") as insert_card_ozon:
+        insert_card_without_keys = json.loads(insert_card_ozon.read())
+
+    with open(f"templates\\keys.json", encoding="utf-8") as keys_ozon:
+        keys_for_replase = json.loads(keys_ozon.read())
+
+        for i, item in enumerate(insert_card_without_keys):
+            values = item.get("values")
+            value = values[0].get("value")
+            for key, key_values in reversed(keys_for_replase.items()):
+                if key in value:
+                    value = value.replace(f'{key}', key_values)
+                    values[0].update({"value": value})
+
+    with open(f'templates\\insert_{name[9:-2]}_with_keys.json', 'w', encoding='utf8') as insert_card_with_keys:
+        json.dump(insert_card_without_keys, insert_card_with_keys, indent=2, ensure_ascii=False)
+
+
 def request_on_ozon(list_for_upload):
     t = {
         "filter": {
@@ -37,11 +58,11 @@ def request_on_ozon(list_for_upload):
         "sort_dir": "ASC"
     }
 
-    # p = t.get("filter")
-    # values = list_for_upload
-    #
-    # p.update({"offer_id": [values.replace("testsubj", "base")]})
-    # print(t)
+    p = t.get("filter")
+    values = list_for_upload
+
+    p.update({"offer_id": [values.replace("testsubj", "base")]})
+
     url_1 = "https://api-seller.ozon.ru/v3/products/info/attributes"
 
     headers = CaseInsensitiveDict()
@@ -53,38 +74,35 @@ def request_on_ozon(list_for_upload):
     resp = requests.post(url_1, headers=headers, data=data)
     status = resp.status_code
     if status == 200:
-        logger.info("Карточка с озона получена...", 1)
+        logger.info(f"Карточка {values} с озона получена...", 1)
         re_json = resp.json()
-        with open(f'request_to_oz\\{values}_oz.json', 'w', encoding='utf8') as dis_WB:
+        with open(f'request_to_oz\\{values[9:-2]}_from_ozon.json', 'w', encoding='utf8') as dis_WB:
             json.dump(re_json, dis_WB, indent=2, ensure_ascii=False)
-        # print(resp_json)
+        return re_json
     else:
-        logger.error(f"Ошибка {status} - Карточка с озона не получена...", 1)
-    return re_json
+        logger.error(f"Ошибка {status} - Карточка {values} с озона не получена...", 1)
 
 
 def return_values(resp_json):
     open_atrib = resp_json.get("result")
     atrib = open_atrib[0].get("attributes")
-    # print(atrib)
+    offer_id = open_atrib[0].get("offer_id")
 
-    with open('templates\\insert_card_oz.json', encoding='utf-8') as insert_card:
+    with open(f'templates\\insert_{offer_id[5:-2]}_with_keys.json', encoding='utf-8') as insert_card:
         set_insert_card = json.load(insert_card)
 
-    open_atrib_insert = set_insert_card.get("result")
-    atrib_insert = open_atrib_insert[0].get("attributes")
-
     for key, value_key in enumerate(atrib):
-        for ket_insert, value_key_insert in enumerate(atrib_insert):
+        for ket_insert, value_key_insert in enumerate(set_insert_card):
 
             if value_key['attribute_id'] == value_key_insert['attribute_id'] and value_key['values'] != \
                     value_key_insert['values']:
                 value_key['values'] = value_key_insert['values']
 
-    # print(atrib)
+
     open_atrib[0].update({"attributes": atrib})
     resp_json.update({"result": open_atrib})
-    # print(resp_json)
+    with open(f'request_to_oz\\{offer_id[5:-2]}_to_ozon.json', 'w', encoding='utf8') as dis_WB:
+        json.dump(resp_json, dis_WB, indent=2, ensure_ascii=False)
     logger.info("Замена значений произведена успешно...", 1)
     return resp_json
 
@@ -98,7 +116,7 @@ def send_to_ozon(return_json):
     items = {"items": [asd]}
     with open(f'items_cards_with_insert.json', 'w', encoding='utf8') as cards_with_insert:
         json.dump(items, cards_with_insert, indent=2, ensure_ascii=False)
-    # print(items)
+
     headers = CaseInsensitiveDict()
     headers["Client-Id"] = "287318"
     headers["Api-Key"] = "0f6afa92-d026-47da-b951-d1198bf31ce7"
@@ -130,13 +148,18 @@ try:
 
             list_for_upload = upload_list(cursor)
 
-            for i in list_for_upload[::3]:
+            for i in list_for_upload:
                 resp_json = request_on_ozon(i)
 
-            return_json = return_values(resp_json)
+                if resp_json:
 
-            send_json = send_to_ozon(return_json)
+                    ck = change_keys(i)
 
+                    return_json = return_values(resp_json)
+
+                    send_json = send_to_ozon(return_json)
+
+            logger.info("Программа закончена...", 1)
     finally:
         connection.close()
 
