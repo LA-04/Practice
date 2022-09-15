@@ -1,11 +1,8 @@
-def get_nod(a, b):
-    if a < b:
-        a, b = b ,a
+def get_rect_value(a, b, type=0):
+    if type == 0:
+        return 2*(a+b)
+    else:
+        return a*b
 
-    while b!=0:
-        a, b = b, a % b
-
-    return a
-
-numbers = list(map(int, input().split()))
-print(get_nod(min(numbers), max(numbers)))
+#numbers = list(map(int, input().split()))
+print(get_rect_value(2, 4))
