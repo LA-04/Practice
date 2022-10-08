@@ -21,9 +21,8 @@ def interactor(end_cod,verd_inter,verd_check):
             return verd_inter
 
 
-print(interactor(0,0,0))
-print(interactor(-1,0,1))
-print(interactor(42,1,6))
-print(interactor(44,7,4))
-print(interactor(1,4,0))
-print(interactor(-3,2,4))
+a = int(input())
+b = int(input())
+c = int(input())
+
+print(interactor(a,b,c))
