@@ -1,28 +1,22 @@
-def interactor(end_cod,verd_inter,verd_check):
-    checker = range(8)
-    inter = range(8)
-    info = range(-128,128)
-    if end_cod in info and verd_inter in inter and verd_check in checker:
-        if verd_inter == 0 and end_cod != 0:
-            return 3
-        elif verd_inter == 0:
-            return verd_check
-        if verd_inter == 1:
-            return verd_check
-        if verd_inter == 4 and end_cod != 0:
-            return 3
-        elif verd_inter == 4:
-            return 4
-        if verd_inter == 6:
-            return 0
-        if verd_inter == 7:
-            return 1
+def ring_line(stations):
+    if 1 <= stations[0] <= 100 and stations[1] != stations[2]:
+        if stations[1] < stations[2]:
+            if stations[1] - 1 + stations[0] - stations[2] <= stations[2] - stations[1]:
+                return stations[1] - 1 + stations[0] - stations[2]
+            else:
+                return stations[2] - stations[1] - 1
         else:
-            return verd_inter
+            if stations[2] - 1 + stations[0] - stations[1] <= stations[1] - stations[2]:
+                return stations[2] - 1 + stations[0] - stations[1]
+            else:
+                return stations[1] - stations[2] - 1
 
 
-a = int(input())
-b = int(input())
-c = int(input())
+stations = list(map(int, input().split()))
 
-print(interactor(a,b,c))
+print(ring_line(stations))
+# print(ring_line([100, 5, 6])) #0
+# print(ring_line([10, 1, 9])) #1
+# print(ring_line([20, 5, 15])) #9
+# print(ring_line([10, 1, 10])) #0
+# print(ring_line([10, 7, 5])) #1
