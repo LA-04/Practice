@@ -1,22 +1,22 @@
-def ring_line(stations):
-    if 1 <= stations[0] <= 100 and stations[1] != stations[2]:
-        if stations[1] < stations[2]:
-            if stations[1] - 1 + stations[0] - stations[2] <= stations[2] - stations[1]:
-                return stations[1] - 1 + stations[0] - stations[2]
-            else:
-                return stations[2] - stations[1] - 1
+def datas(day):
+    days = range(1, 32)
+    months = range(1, 32)
+    years = range(1970, 2070)
+    if day[0] in days and day[1] in months and day[2] in years:
+        if day[0] <= 12 and day[1] <= 12 and day[0] != day[1]:
+            return 0
         else:
-            if stations[2] - 1 + stations[0] - stations[1] <= stations[1] - stations[2]:
-                return stations[2] - 1 + stations[0] - stations[1]
-            else:
-                return stations[1] - stations[2] - 1
+            return 1
 
 
-stations = list(map(int, input().split()))
+# day = list(map(int, input().split()))
+# print(datas(day))
 
-print(ring_line(stations))
-# print(ring_line([100, 5, 6])) #0
-# print(ring_line([10, 1, 9])) #1
-# print(ring_line([20, 5, 15])) #9
-# print(ring_line([10, 1, 10])) #0
-# print(ring_line([10, 7, 5])) #1
+print(datas([1, 2, 2003]))  # 0
+print(datas([7, 12, 2003]))  # 0
+print(datas([7, 13, 2003]))  # 1
+print(datas([13, 2, 2003]))  # 1
+print(datas([21, 22, 2003]))  # 0
+print(datas([12, 12, 2003]))  # 0
+print(datas([1, 12, 2003]))  # 0
+print(datas([12, 12, 2003]))  # 1
