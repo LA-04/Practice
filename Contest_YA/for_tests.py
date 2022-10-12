@@ -1,9 +1,15 @@
-def long_word(word):
-    if len(word) > 10:
-        return f"{word[0]}{len(word)-2}{word[-1]}"
-    else:
-        return word
+def team(task, who_know):
+    n = 0
+    for i in range(task):
+        if sum(who_know[i]) >= 2:
+            n += 1
+    return n
 
-n = int(input())
-for i in range(n):
-    print(long_word(input()))
+
+task = int(input())
+who_know = []
+for i in range(task):
+    who_know.append(list(map(int, input().split())))
+
+print(team(task, who_know))
+print(team(2,[[1,0,0],[0,1,1]]))
