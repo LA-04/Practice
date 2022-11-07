@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1e55b54-e0f4-4f2f-a2a7-85078315860b" name="Changes" comment="+" />
+    <list default="true" id="c1e55b54-e0f4-4f2f-a2a7-85078315860b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Contest_YA/for_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Contest_YA/for_tests.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,23 +31,66 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/python/Practice/for_WB",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/python/Practice/for_WB/TZ_postgres2wb/storage&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\python\Practice\for_WB\TZ_postgres2wb\storage" />
+      <recent name="D:\python\Practice\Contest_YA" />
       <recent name="D:\python\Practice\templates" />
       <recent name="D:\Загрузки\Mozilla\TZ_postgres2wb\TZ_postgres2wb\storage" />
       <recent name="D:\python\for_WB" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.loading_cards_oz">
+  <component name="RunManager" selected="Python.loading_cards_ozzz">
+    <configuration name="for_tests (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="for_WB" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Contest_YA" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Contest_YA/for_tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="for_tests" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="for_WB" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../stepik" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../stepik/for_tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="loading_cards_o" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="for_WB" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -88,28 +133,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="loading_cards_ozon" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="for_WB" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Loban\AppData\Local\Microsoft\WindowsApps\python3.10.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TZ_postgres2wb/storage" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TZ_postgres2wb/storage/loading_cards_ozon.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="log (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="loading_cards_ozzz" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="for_WB" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -121,28 +145,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TZ_postgres2wb/storage/log.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="log" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="for_WB" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../Загрузки/Mozilla" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../Загрузки/Mozilla/log.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TZ_postgres2wb/storage/loading_cards_ozzz.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -173,20 +176,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.main" />
+      <item itemvalue="Python.for_tests (1)" />
+      <item itemvalue="Python.for_tests" />
       <item itemvalue="Python.loading_cards_o" />
       <item itemvalue="Python.loading_cards_oz" />
-      <item itemvalue="Python.log (1)" />
-      <item itemvalue="Python.loading_cards_ozon" />
-      <item itemvalue="Python.log" />
+      <item itemvalue="Python.loading_cards_ozzz" />
+      <item itemvalue="Python.main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.loading_cards_ozzz" />
         <item itemvalue="Python.loading_cards_oz" />
+        <item itemvalue="Python.for_tests (1)" />
+        <item itemvalue="Python.for_tests" />
         <item itemvalue="Python.loading_cards_o" />
-        <item itemvalue="Python.log (1)" />
-        <item itemvalue="Python.log" />
-        <item itemvalue="Python.loading_cards_ozon" />
       </list>
     </recent_temporary>
   </component>
@@ -206,12 +209,115 @@
       <option name="project" value="LOCAL" />
       <updated>1662475929730</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="A. Interactor">
+      <created>1665229761825</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665229761825</updated>
+    </task>
+    <task id="LOCAL-00003" summary="A. Interactor">
+      <created>1665251712001</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665251712001</updated>
+    </task>
+    <task id="LOCAL-00004" summary="B. Кольцевая линия метро">
+      <created>1665324538246</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665324538246</updated>
+    </task>
+    <task id="LOCAL-00005" summary="C. Даты">
+      <created>1665386148062</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665386148062</updated>
+    </task>
+    <task id="LOCAL-00006" summary="A. Арбуз">
+      <created>1665429930392</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665429930392</updated>
+    </task>
+    <task id="LOCAL-00007" summary="A. Слишком длинные слова">
+      <created>1665430852877</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665430852877</updated>
+    </task>
+    <task id="LOCAL-00008" summary="A. Команда">
+      <created>1665584018284</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665584018284</updated>
+    </task>
+    <task id="LOCAL-00009" summary="A. Следующий раунд">
+      <created>1665586435438</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1665586435438</updated>
+    </task>
+    <task id="LOCAL-00010" summary="A. Укладка доминошками">
+      <created>1665586988453</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1665586988453</updated>
+    </task>
+    <task id="LOCAL-00011" summary="A. Bit++">
+      <created>1665588502452</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1665588502452</updated>
+    </task>
+    <task id="LOCAL-00012" summary="A. Красивая матрица">
+      <created>1665592050407</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1665592050407</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Циклический сдвиг">
+      <created>1665593428055</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1665593428055</updated>
+    </task>
+    <task id="LOCAL-00014" summary="D. Строительство школы НЕ РЕШЕНА">
+      <created>1665658718501</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1665658718501</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="+" />
-    <option name="LAST_COMMIT_MESSAGE" value="+" />
+    <MESSAGE value="A. Interactor" />
+    <MESSAGE value="B. Кольцевая линия метро" />
+    <MESSAGE value="C. Даты" />
+    <MESSAGE value="A. Арбуз" />
+    <MESSAGE value="A. Слишком длинные слова" />
+    <MESSAGE value="A. Команда" />
+    <MESSAGE value="A. Следующий раунд" />
+    <MESSAGE value="A. Укладка доминошками" />
+    <MESSAGE value="A. Bit++" />
+    <MESSAGE value="A. Красивая матрица" />
+    <MESSAGE value="Циклический сдвиг" />
+    <MESSAGE value="D. Строительство школы НЕ РЕШЕНА" />
+    <option name="LAST_COMMIT_MESSAGE" value="D. Строительство школы НЕ РЕШЕНА" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -270,6 +376,46 @@
           <url>file://$PROJECT_DIR$/TZ_postgres2wb/storage/loading_cards_o.py</url>
           <line>102</line>
           <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Contest_YA/for_tests.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Contest_YA/for_tests.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Contest_YA/for_tests.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Contest_YA/for_tests.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Contest_YA/for_tests.py</url>
+          <line>5</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Contest_YA/for_tests.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Contest_YA/for_tests.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../Contest_YA/for_tests.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="66" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

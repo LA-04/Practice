@@ -113,10 +113,6 @@ try:
             # 3
 
 
-
-
-
-
     finally:
         connection.close()
 

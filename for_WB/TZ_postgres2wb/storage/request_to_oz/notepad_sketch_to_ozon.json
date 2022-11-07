@@ -144,7 +144,57 @@
           ]
         },
         {
-          "attribute_id": 10015,
+          "attribute_id": 5258,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 12066,
+              "value": "Без ограничения"
+            }
+          ]
+        },
+        {
+          "attribute_id": 13216,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 971006037,
+              "value": "Унисекс"
+            }
+          ]
+        },
+        {
+          "attribute_id": 4180,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 0,
+              "value": "YOUni / Скетчбук с оленями для рисования / Блокнот с оленятами для скетчинга"
+            }
+          ]
+        },
+        {
+          "attribute_id": 21807,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 971229788,
+              "value": "A5 (14.8 × 21 см)"
+            }
+          ]
+        },
+        {
+          "attribute_id": 9048,
+          "complex_id": 0,
+          "values": [
+            {
+              "dictionary_value_id": 0,
+              "value": "base_notepad_sketch"
+            }
+          ]
+        },
+        {
+          "attribute_id": 22074,
           "complex_id": 0,
           "values": [
             {
@@ -164,36 +214,6 @@
           ]
         },
         {
-          "attribute_id": 13216,
-          "complex_id": 0,
-          "values": [
-            {
-              "dictionary_value_id": 971006037,
-              "value": "Унисекс"
-            }
-          ]
-        },
-        {
-          "attribute_id": 21807,
-          "complex_id": 0,
-          "values": [
-            {
-              "dictionary_value_id": 971229788,
-              "value": "A5 (14.8 × 21 см)"
-            }
-          ]
-        },
-        {
-          "attribute_id": 4180,
-          "complex_id": 0,
-          "values": [
-            {
-              "dictionary_value_id": 0,
-              "value": "YOUni / Скетчбук с оленями для рисования / Блокнот с оленятами для скетчинга"
-            }
-          ]
-        },
-        {
           "attribute_id": 9461,
           "complex_id": 0,
           "values": [
@@ -204,12 +224,12 @@
           ]
         },
         {
-          "attribute_id": 9048,
+          "attribute_id": 11794,
           "complex_id": 0,
           "values": [
             {
-              "dictionary_value_id": 0,
-              "value": "base_notepad_sketch"
+              "dictionary_value_id": 970860783,
+              "value": "safe"
             }
           ]
         },
@@ -234,26 +254,6 @@
           ]
         },
         {
-          "attribute_id": 5258,
-          "complex_id": 0,
-          "values": [
-            {
-              "dictionary_value_id": 12066,
-              "value": "Без ограничения"
-            }
-          ]
-        },
-        {
-          "attribute_id": 11794,
-          "complex_id": 0,
-          "values": [
-            {
-              "dictionary_value_id": 970860783,
-              "value": "safe"
-            }
-          ]
-        },
-        {
           "attribute_id": 10100,
           "complex_id": 0,
           "values": [
@@ -264,7 +264,7 @@
           ]
         },
         {
-          "attribute_id": 22074,
+          "attribute_id": 10015,
           "complex_id": 0,
           "values": [
             {
