@@ -66,29 +66,26 @@ def create_rez_vitte(list_fon, list_rez_vitte):
 
     # im_fon = im_fon.resize((800, 400))
     im_fon = im_fon.crop((0,100, 800, 500))
-
-    # if height_rez < 65:
-    #     im_rez = im_rez.resize((width, 40))
-    #     im_voda.resize((width_rez, height_rez))
-    #     im_rez.paste(im_voda,(200,5), im_voda)
-    # elif 65 <= height_rez <= 100:
-    #     im_rez = im_rez.resize((width, 60))
-    #     im_voda.resize((width_rez, height_rez))
-    #     im_rez.paste(im_voda, (200,15), im_voda)
-    # else:
-    #     im_rez = im_rez.resize((width, 100))
-    #     im_voda.resize((width_rez, height_rez))
-    #     im_rez.paste(im_voda, (200,35), im_voda)
-
-    im_rez = im_rez.resize((700, 150))
     im_voda.resize((width_rez, height_rez))
-    im_rez.paste(im_voda, (200, 35), im_voda)
 
     im_stock.paste(im_fon, (0, 100), im_fon)
     im_stock.paste(im_filter, (0, 100), im_filter)
-    im_stock.paste(im_rez, (50,(height - 150 )//2))
+
+    if height_rez > 1000:
+        im_rez = im_rez.resize((600, 300))
+        im_stock.paste(im_rez, (100, (100 + ((400-300)//2))))
+        # im_voda.resize((width_rez, height_rez))
+        # im_rez.paste(im_voda,(200,5), im_voda)
+    else:
+        new_height_rez = height_rez // 3
+        im_rez = im_rez.resize((700, height_rez // 3))
+        im_stock.paste(im_rez, (50, (100 + ((400-new_height_rez)//2))))
+        # im_voda.resize((width_rez, height_rez))
+        # im_rez.paste(im_voda, (200, 35), im_voda)
+
     im_stock.paste(im_header, (0, 0), im_header)
     im_stock.paste(im_under, (25,505), im_under)
+    im_stock.paste(im_voda, (200, 284), im_voda)
 
     im_stock.save(f'rezults/vitte/{list_rez_vitte}+{list_fon}', quality = 95)
     return logger.info(f"Картинка {list_fon}+{list_rez_vitte} создана")
