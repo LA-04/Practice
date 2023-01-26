@@ -2,11 +2,13 @@ from flask import Flask, render_template, url_for, request, flash, g
 import sqlite3
 import os
 from FDataBase import FDataBase
+from flask_sqlalchemy import SQLAlchemy
 
 #Конфигурация
 DATABASE = '/tmp/flsite.db'
 DEBUG = True
 SECRET_KEY = 'FDGSDHFJJSKAF789LKJLKJ4K4K4F'
+
 
 app = Flask(__name__)
 app.config.from_object(__name__)
@@ -40,7 +42,7 @@ def get_db():
 def index():
     db = get_db()
     dbase = FDataBase(db)
-    return render_template('index.html', menu=dbase.getMenu())
+    return render_template('index.html', menu=dbase.getMenu(), posts=dbase.getPostsAnonce())
 
 @app.route("/brands")
 def brands():
@@ -52,11 +54,11 @@ def brands():
 def showBrands(url):
     db = get_db()
     dbase = FDataBase(db)
-    brand_name = dbase.getBrand(url)
+    brand_name, brand_img = dbase.getBrand(url)
     if not brand_name:
         abort(404)
 
-    return render_template('post.html', menu=dbase.getMenu(), title = brand_name, post = brand_name)
+    return render_template('post.html', menu=dbase.getMenu(), title = brand_name, post = brand_img)
 
 @app.route("/about")
 def about():

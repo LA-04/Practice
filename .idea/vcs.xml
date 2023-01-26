@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/296_yimocargo" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Pandas" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/desktop-tutorial" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/twrk-back" vcs="Git" />
   </component>
 </project>

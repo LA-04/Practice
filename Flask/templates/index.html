@@ -2,14 +2,58 @@
 
 {% block content %}
 {{ super() }}
-<hr>
-<h2>Список статей</h2>
-<ul class="list-post">
-    {% for p in posts %}
-    <li>
-        <p class="title"><a href="{{ url_for('showPost', id_post=p.id)}}">{{p.title}}</a></p>
-        <p class="annonce">{{ p.text[:50] }}</p>
-    </li>
-    {% endfor %}
-</ul>
+<main class="main">
+    <section class="intro">
+        <div class="wrapper">
+
+            <h1 class="intro_title">
+                Производим оборудование <p>MOTOVARIO</p> с 2018 года
+            </h1>
+            <h3 class="intro_subtitle">
+                Дистрибьютеры приводной европейской техники более 15 лет
+            </h3>
+            <form class="info-form">
+                <fieldset class="info-form_wrap">
+                    <p class="info-form_button">
+                        <button type="submit" class="info_submit">Подорбнее</button>
+                    </p>
+                </fieldset>
+            </form>
+
+        </div>
+
+    </section>
+
+    <section class="brands">
+        <div class="wrapper">
+            <h2 class="brands_title">
+                Наши европейские партнеры
+            </h2>
+            <p class="brands_subtitle">
+                Работаем напрямую с большим количеством производителей из Италии, Германии, Испании, Голандии
+            </p>
+            <div class="brands_wrap">
+                <ul class="brands_cards">
+                {% for p in posts %}
+                    <li class="brand_card">
+                        <p class="brand_card_img"><a href="{{ url_for('showBrands', url=p.url)}}"><img src="{{ url_for('static', filename=p.brand_img) }}" alt="{{ p.brand_name }}" class="brands_logo-pic"></a></p>
+                        <p class="brand_card_name"><a href="{{ url_for('showBrands', url=p.url)}}">{{ p.brand_name }}</a></p>
+                    </li>
+                {% endfor %}
+                </ul>
+<!--                <img src="{{ url_for('static', filename='img/STM-logo.jpg') }}" alt="Riduttori.ru" class="header_logo-pic">-->
+            </div>
+
+        </div>
+    </section>
+
+    <section class="gears">
+        <div class="wrapper">
+            <div>
+                <h2 class="gears_title">Продукция</h2>
+            </div>
+        </div>
+    </section>
+
+</main>
 {% endblock %}

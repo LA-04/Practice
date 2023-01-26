@@ -94,9 +94,9 @@ list_fon = os.listdir("фон/")
 list_rez_fem = os.listdir("результаты/фэм/")
 list_rez_vitte = os.listdir("результаты/витте/")
 
-# for i in range(len(list_rez_fem)):
-#     random.shuffle(list_fon)
-#     create_rez_fem(random.choice(list_fon), list_rez_fem[i])
+for i in range(len(list_rez_fem)):
+    random.shuffle(list_fon)
+    create_rez_fem(random.choice(list_fon), list_rez_fem[i])
 
 for i in range(len(list_rez_vitte)):
     random.shuffle(list_fon)

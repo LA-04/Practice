@@ -8,7 +8,7 @@
     {% for p in posts %}
     <li>
         <p class="title"><a href="{{ url_for('showBrands', url=p.url)}}">{{p.brand_name}}</a></p>
-        <p class="annonce">{{ p.brand_name }}</p>
+        <p class="annonce">{{ p.brand_img }}</p>
     </li>
     {% endfor %}
 </ul>
