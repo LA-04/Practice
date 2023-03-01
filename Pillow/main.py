@@ -51,12 +51,12 @@ def create_rez_fem(list_fon, list_rez_fem):
     return logger.info(f"Картинка {list_fon}+{list_rez_fem} создана")
 
 
-def create_rez_vitte(list_fon, list_rez_vitte):
-    im_fon = Image.open(f'фон/{list_fon}')
+def create_rez_vitte(list_rez_vitte):
+    im_fon = Image.open(f'фон/fon.png')
     im_rez = Image.open(f'результаты/витте/{list_rez_vitte}')
     im_stock = Image.open('маска/vitte/stock.png')
     im_header = Image.open('маска/vitte/header.png').convert("RGBA")
-    im_filter = Image.open('маска/vitte/filtr.png').convert("RGBA")
+    # im_filter = Image.open('маска/vitte/filtr.png').convert("RGBA")
     im_voda = Image.open('маска/vitte/vittetests.png').convert("RGBA")
     im_under = Image.open('маска/vitte/vittetests_under.png').convert("RGBA")
 
@@ -65,14 +65,14 @@ def create_rez_vitte(list_fon, list_rez_vitte):
     width_rez, height_rez = im_rez.size
 
     # im_fon = im_fon.resize((800, 400))
-    im_fon = im_fon.crop((0,100, 800, 500))
+    im_fon = im_fon.crop((0,0, 800, 525))
     im_voda.resize((width_rez, height_rez))
 
-    im_stock.paste(im_fon, (0, 100), im_fon)
-    im_stock.paste(im_filter, (0, 100), im_filter)
+    im_stock.paste(im_fon, (0, 0), im_fon)
+    # im_stock.paste(im_filter, (0, 100), im_filter)
 
     if height_rez > 1000:
-        im_rez = im_rez.resize((600, 300))
+        im_rez = im_rez.resize((700, 300))
         im_stock.paste(im_rez, (100, (100 + ((400-300)//2))))
         # im_voda.resize((width_rez, height_rez))
         # im_rez.paste(im_voda,(200,5), im_voda)
@@ -83,12 +83,12 @@ def create_rez_vitte(list_fon, list_rez_vitte):
         # im_voda.resize((width_rez, height_rez))
         # im_rez.paste(im_voda, (200, 35), im_voda)
 
-    im_stock.paste(im_header, (0, 0), im_header)
+    im_stock.paste(im_header, (0, 50), im_header)
     im_stock.paste(im_under, (25,505), im_under)
     im_stock.paste(im_voda, (200, 284), im_voda)
 
-    im_stock.save(f'rezults/vitte/{list_rez_vitte}+{list_fon}', quality = 95)
-    return logger.info(f"Картинка {list_fon}+{list_rez_vitte} создана")
+    im_stock.save(f'rezults/vitte/{list_rez_vitte}', quality = 95)
+    return logger.info(f"Картинка {list_rez_vitte} создана")
 
 list_fon = os.listdir("фон/")
 list_rez_fem = os.listdir("результаты/фэм/")
@@ -96,9 +96,9 @@ list_rez_vitte = os.listdir("результаты/витте/")
 
 for i in range(len(list_rez_fem)):
     random.shuffle(list_fon)
-    create_rez_fem(random.choice(list_fon), list_rez_fem[i])
+    create_rez_fem(list_fon, list_rez_fem[i])
 
 for i in range(len(list_rez_vitte)):
-    random.shuffle(list_fon)
-    create_rez_vitte(random.choice(list_fon), list_rez_vitte[i])
+    # random.shuffle(list_fon)
+    create_rez_vitte(list_rez_vitte[i])
     # create_rez_vitte(random.choice(list_fon), list_rez_vitte[1])

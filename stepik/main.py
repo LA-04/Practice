@@ -1,16 +1,11 @@
-# This is a sample Python script.
+import pandas as pd
+import re
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+today = "01.03"
+book = pd.read_excel('Birthdays_test.xlsx', sheet_name = 'Notifications')
+# for i, row in book.iterrows():
+#     if today in row['Дата рождения']:
+#         print(i)
+# book['Статус отправки'] = ["Отправлено" if today in row['Дата рождения'] else " " for i, row in book.iterrows()]
+# re.fullmatch(pattern, string)
+[print("Отправлено") if re.search(today,row['Дата рождения']) else print("ytn") for i, row in book.iterrows()]
