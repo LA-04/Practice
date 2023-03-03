@@ -1,8 +1,9 @@
+import os
 import requests
 import datetime
 import xmltodict
 import json
-from auth_data import token
+from dotenv import load_dotenv
 from aiogram import Bot, types
 from aiogram.dispatcher import Dispatcher, FSMContext
 from aiogram.utils import executor
@@ -13,6 +14,8 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, CallbackQuery, In
 from aiogram_calendar import dialog_cal_callback, DialogCalendar
 
 storage = MemoryStorage()
+load_dotenv()
+token = os.getenv("token")
 
 bot = Bot(token=token)
 dp = Dispatcher(bot, storage=storage)
